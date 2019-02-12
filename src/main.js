@@ -81,5 +81,5 @@ data.forEach(element =>{
  let multipliers = element.multipliers;
  let weaknesses = element.weaknesses;
  data(num, name, img, type, height, weight, candy, candy_count, egg, spawn_chance, avg_spawns, spawn_time, multipliers,
-  weaknesses, );
+  weaknesses);
 })

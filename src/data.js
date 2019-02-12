@@ -1,7 +1,7 @@
 window.pokemon = {
 
 
-
+//comentando para probar 12 febrero
 
   data.forEach(element =>{
    let num = element.num;
