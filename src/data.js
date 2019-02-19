@@ -9,8 +9,6 @@ window.pokemon = {
       }
     });
 
-
-<<<<<<< HEAD
   },
 
 ordenarPorNombre :  (pokemonArray) => {
@@ -26,32 +24,8 @@ ordenarPorNombre :  (pokemonArray) => {
 
   });
   return sortName
-=======
-
-  },
->>>>>>> upstream/master
-
-  ordenarPorNombre: (pokemonArray) => {
-    const sortName =
-      pokemonArray.sort((prev, next) => {
-        if (prev.name > next.name) {
-          return 1;
-        } else if (prev.name < next.name) {
-          return -1;
-        } else {
-          return 0;
-        }
-
-<<<<<<< HEAD
 
 
-
-
-
-
-=======
-      });
-    return sortName
 
   },
   totalWeightPokemon: (pokemonArray) => {
@@ -60,5 +34,5 @@ ordenarPorNombre :  (pokemonArray) => {
     }, 0)
     return pokemonTotalWeight;
   }
->>>>>>> upstream/master
+
 }
