@@ -1,30 +1,38 @@
 window.pokemon = {
+  filterPokemons: (dataPokemon, elementPokemon) => {
+    return dataPokemon.filter(pokemon => {
+      // let typePokemon = pokemon.type[0]
+      for (let i = 0; i < pokemon.type.length; i++) {
+        if (pokemon.type[i] === elementPokemon) {
+          return true
+        }
+      }
+    });
 
-  show:(data) => {
+  },
 
-    const imprimir = (nombre,imagen) =>{
-
-      const pokemons = document.getElementById("pokemons");
-      let nombrePokemon = `<div class="divPokemon"><img src="${imagen}">${nombre}</div>`;
-      pokemons.insertAdjacentHTML("beforeend",nombrePokemon);
-
+ordenarPorNombre :  (pokemonArray) => {
+  const sortName =
+  pokemonArray.sort( (prev, next) =>  {
+    if (prev.name > next.name) {
+      return 1;
+    }else if  (prev.name < next.name) {
+        return -1;
+      }else{
+      return 0;
     }
 
-    data.forEach(elemento =>{
-      let nombre = elemento.name;
-      let imagen = elemento.img;
-      imprimir(nombre, imagen);
+  });
+  return sortName
 
-    })
-      return imprimir;
-    }
+
+
+  },
+  totalWeightPokemon: (pokemonArray) => {
+    const pokemonTotalWeight = pokemonArray.reduce((total, dataPokemon) => {
+      return total += parseFloat(dataPokemon.weight);
+    }, 0)
+    return pokemonTotalWeight;
   }
 
-
-
-
-//const example = () => {
-  //return 'example';
-//};
-
-//window.example = example;
+}
