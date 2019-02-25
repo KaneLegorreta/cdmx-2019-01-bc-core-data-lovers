@@ -13,12 +13,12 @@ html{
 }
 
 body {
-  background: url(http://oi65.tinypic.com/nbdlr5.jpg);
+  background: url(http://i65.tinypic.com/fyfy8l.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
-  background-color: white;
+
 
 }
 
@@ -40,7 +40,7 @@ h1 {
   line-height: 100px;
   letter-spacing: 15px;
   /*word-spacing: 20px;*/
-  text-shadow: #00FFFF 8px 8px 2px;
+  text-shadow: #58E590 8px 8px 2px;
 }
 
 
@@ -54,17 +54,12 @@ div {
 }
 
 
-input {
-  margin-bottom: 80%;
-  width: 30%;
-  padding: 1em;
-  box-sizing: border-box;
-}
 
 button {
   margin-bottom: 100%;
   width: 10%;
   padding: 1em;
+  border-radius:20px;
   box-sizing: border-box;
 }
 
@@ -87,8 +82,9 @@ button[type="submit"]:hover {
 
 .tarjeta{
   width: 25%;
-  background: #3498DB;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
   padding: 0%;
+  border-radius:30px;
   display: inline-block;
 }
 
@@ -96,6 +92,7 @@ button[type="submit"]:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+
 }
 
 .hide {
@@ -118,7 +115,8 @@ ul {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
-  background: #3498DB;
+  width: 100%;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
   display: flex;
 
 }
@@ -136,6 +134,7 @@ li {
 li.dropdown {
   display: inline-block;
 }
+
 
 /*   */
 .dropdown-content {
@@ -166,6 +165,22 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.style-input{
+  width: 10%;
+  padding: 1em;
+  border-radius:5px;
+  border-right-style: groove;
+  background-color: white;
+  margin-bottom: 10%;
+  box-sizing: border-box;
+
+
+}
+
+
+
+
 
 a {
   text-decoration: none;
@@ -199,10 +214,72 @@ main {
 }
 
 
-/* For mobile phones: */
-@media only screen and (min-width: 0px) and (max-width: 900px) {
+@media only screen and (min-width: 0px) and (max-width: 360px) {
   .tarjeta{
     width: 100%;
     display: block;
+    text-align: center;
   }
+}
+
+
+
+/* For mobile phones: GALAXY 5S */
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  .tarjeta{
+    width: 70%;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* PENDOENTEEE The "responsive" class is added to the navBar with JavaScript when the user clicks on the icon. This class makes the navBar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navBar.responsive {
+    position: relative;
+  }
+
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 999px) and (min-width: 320px) {
+  .logo-style {
+    position: relative;
+    left: 0%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    width: 50vw;
+  }
+
+  .buttons-style {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 768px) {
+  .logo-style {
+    position: relative;
+    left: 0%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    width: 50vw;
+  }
+
+  .buttons-style {
+    margin-top: 30px;
+  }
+
 }

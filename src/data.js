@@ -34,5 +34,4 @@ ordenarPorNombre :  (pokemonArray) => {
     }, 0)
     return pokemonTotalWeight;
   }
-
 }
