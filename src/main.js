@@ -25,9 +25,9 @@ const forWeight = document.getElementById('forWeight');
 
 
 btngetName.addEventListener("click", () => {
-  
-  const name = trainerName.value;
-  bienvenido.innerHTML = '¡Hola entrenador ' + name + '. Bienvenido!';
+
+
+  bienvenido.innerHTML = '¡Bienvenido entrenador!';
   sectionName.style.display = "none";
   pantalla2.style.display = "block"
 })
