@@ -13,12 +13,12 @@ html{
 }
 
 body {
-  background: url(http://i65.tinypic.com/fyfy8l.jpg);
+  background: url(http://oi65.tinypic.com/nbdlr5.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
-
+  background-color: white;
 
 }
 
@@ -40,13 +40,12 @@ h1 {
   line-height: 100px;
   letter-spacing: 15px;
   /*word-spacing: 20px;*/
-  text-shadow: #58E590 8px 8px 2px;
+  text-shadow: #00FFFF 8px 8px 2px;
 }
 
 
 div {
   text-align: center;
-  color: white;
   font-family: 'Nova Flat', cursive;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -55,12 +54,17 @@ div {
 }
 
 
+input {
+  margin-bottom: 80%;
+  width: 30%;
+  padding: 1em;
+  box-sizing: border-box;
+}
 
 button {
   margin-bottom: 100%;
   width: 10%;
   padding: 1em;
-  border-radius:20px;
   box-sizing: border-box;
 }
 
@@ -85,7 +89,6 @@ button[type="submit"]:hover {
   width: 25%;
   background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
   padding: 0%;
-  border-radius:30px;
   display: inline-block;
 }
 
@@ -93,7 +96,6 @@ button[type="submit"]:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-
 }
 
 .hide {
@@ -116,8 +118,8 @@ ul {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
-  width: 100%;
-  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  width: 50%;
+  background: #3498DB;
   display: flex;
 
 }
@@ -135,7 +137,6 @@ li {
 li.dropdown {
   display: inline-block;
 }
-
 
 /*   */
 .dropdown-content {
@@ -167,22 +168,6 @@ li.dropdown {
   display: block;
 }
 
-.style-input{
-  width: 30%;
-  padding: 1em;
-  border-radius:5px;
-  border-right-style: groove;
-  background-color: white;
-  margin-bottom: 10%;
-  box-sizing: border-box;
-
-
-}
-
-
-
-
-
 a {
   text-decoration: none;
   color: #F4F6F7;
@@ -194,9 +179,8 @@ a:hover {
 }
 
 span {
-  width: auto;
-  color: white;
-  font-size: 3em;
+  color: black;
+  font-size: 2em;
 }
 
 main {
@@ -216,50 +200,10 @@ main {
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 360px) {
+/* For mobile phones: */
+@media only screen and (min-width: 0px) and (max-width: 900px) {
   .tarjeta{
     width: 100%;
     display: block;
-    text-align: center;
-  }
-}
-
-
-
-/* For mobile phones: GALAXY 5S */
-@media only screen and (min-width: 360px) and (max-width: 640px) {
-  .tarjeta{
-    width: 70%;
-    display: block;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navBar.responsive {
-    position: relative;
-  }
-
-  .navBar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navBar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-}
-
-
-
-@media (max-width: 999px) and (min-width: 768px) {
-  .tarjeta{
-    width: 25%;
-    display: block;
-    text-align: center;
   }
 }
