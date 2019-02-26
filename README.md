@@ -1,5 +1,112 @@
 #Hola  hola hola
 
+#Readme.md Data Lovers
+Pokémon Pokelovers
+Preámbulo
+Es un visualizador de data con la finalidad de mostrar a los usuarios mas consolidados las cualidades inerentes de cada Pokemon. El videojuego desarrollado por Niantic utiliza la realidad aumentada y de acuerdo con el concepto original, los entrenadores podrán capturar Pokémon hasta completar una colección, el numero de Pokemon que es posible capturar es limitado.
+
+Algunos Pokemon son más fáciles de atrapar que otros, algunos incluso pueden escapar de las Pokebolas y debes volverlos a atrapar lo cual implica invertir en insumos, es decir "caramelos" los cuales son limitados. De ahí surge la necesidad de crear una herramienta que te permita conocer las cualidades, debilidades y atributos de cada personaje, para evaluar si efectivamnete vale la pena usar recursos para capturarlo.
+
+
+Para poder lograr la interfaz se dio a la tarea de llevar a cabo una investigación de campo con usuarios ya conocedores del tema de Pokémon, principalmente sobre la pokedext, realizando las siguientes preguntas clave para el equipo. ¿qué es?, ¿para qué sirve?, ¿Cómo le puede dar usabilidad el usuario?, y ¿qué mejoras se pueden lograr con respecto a otras interfaces?
+
+Se realizaron varias encuestas a diferentes tipos de usuarios experimentados siguiendo un formato de cuestionario sencillo.
+
+Historias de Usuario
+Historias de usuario
+
+#Encuesta.
+
+Con esta información recabada se realizo un prototipado de baja fidelidad , y un prototipado de alta fidelidad
+Aquí se encuentra el formulario que valida las desiciones de experiencia de Usuario.
+![Formulario de Validación]  (https://docs.google.com/forms/d/e/1FAIpQLSdH4pfEFT07zk607ZH596_06zxOoRu_fixbAtQrnb2PG8LEUw/viewform?usp=sf_link)
+
+#Prototipo Baja fidelidad
+Baja fidelidad
+
+#Prototipo Alta fidelidad
+Alta Fidelidad Foto.
+
+#Feedback
+Se realizaron observaciones y pruebas donde se percató que los usuarios requerían una interfaz más sencilla de navegar, proporcionar información de los pokemones con un filtrado por elemento y peso, así como ordenarlos por nombre y que esta fuera intuitiva sin tantas instrucciones.
+
+La cual fuera un apoyo de la interfaz de pokemon go ya que no se sabe que tan poderoso pueda ser el pokemon de captura y esto provoca una saturación de espacio por lo tanto obliga al jugador a desinstalarla o bien eliminar otras interfaces, así como tener pokemones que no les son útiles.
+
+Esto nos llevó a una evolución de la interfaz pasando por varios cambios desde modificar el Background, poner un navegador, respetar los colores institucionales de Pokemon, eliminar botones, y rehacer totalmente la interfaz para lograr el diseño que nuestros usuarios demandaban.
+
+#Objetivo de La Interfaz
+
+
+En la primera pantalla, la interfaz te invita a loggearte para tener una experiencia
+mas personalizada. Colocamos una barra que permite elegir la función que desea
+realizar el usuario.
+En la barra esta la opción de "inicio" la cual retorna a la primera pagina.
+La opción Pokelist imprime los 150 Pokemon de la región de Kanto.
+La opción "Peso" nos lanza un calculo del peso total de los 150 Pokemon.
+Y la opción "Elementos" nos permite filtrar por elemento en una lista, desde un
+menú que se despliega.
+Lo imprime y muestra en tarjetas con su imagen, caracteristicas en general,
+tales como: imagen, nombre, número, peso, altura, debilidades, tipo de caramelo,
+entre otros datos.
+
+
+
+Pokedex Website surge dando solución a usuarios ya consolidados, así como a los nuevos y futuros consumidores aportando el conocimiento necesario sobre los pokemones de la región kanto filtrados por elementos con sus caracterizas para la hora de un combate puede tener la noción de:
+
+-Qué tipo de elemento pertenecen -Como se llaman -El número que ocupan en la lista -Cuánto pesan
+
+Con esta información el usuario podrá saber si vale la pena cazar al pokemon y retarlo a un combate sabiendo que pokemones tiene con cuál de ellos pueda vencer al que quiere obtener, y así evitando tener pokemones que no valgan tanto la pena a consideración del usuario para no saturar su capacidad de espacio.
+
+Las desiciónes de diseño fueron tomadas en función a "Historias de usuario"
+previamente realizadas. En un grupo de jugadores de entre 8 y 17 años, que
+ya tienen experiencia en el juego y saben que los caramelos Pokemon son
+dificiles de conseguir y en todo caso, costosos.
+Dichas entrevistas arrojaron la necesidad de Visibilizar los atributos de cada
+personaje, de manera sintetizada y compacta. En tarjetas emulando así la interfaz
+de Pokemon GO. Listas con los Pokemon de cada elemento. Ademas de ser visualmente
+alusiva a Pokemon.
+Para llegar al objetivo se utilizo:
+* "Método Filter" para filtrar por tipo.
+* "Método Sort" para filtrar por orden alfabético.
+* "Método reduce" para aplicar una función, calcular el peso y reducir a un único valor.
+
+La interfaz tiene colores vibrantes y contrastantes entre sí que se ajustan a los
+colores institucionales y emblemáticos de la franquicia.
+
+
+
+#Herramientas
+Java Script Vanilla
+CSS con diseño responsivo
+HTML Vanilla
+Jest para pruebas unitarias
+Métodos y Funciones utilizadas
+filter
+Funciones puras
+sort
+redius
+Colaboradores
+Claudia Ferrusca
+Karen Legorreta
+Andrea Ramírez
+Agradecimiento
+Queremos agradecer a todas aquellas personas que nos apoyaron en dudas y retroalimentaciones para poder lograr este proyecto, a nuestros couches, nuestra compañera Mimi, a nuestro squad, Jedi y a la gente que contribuyó para que esto salga a flote y el día de hoy lo podamos visualizar, así como a él ☕ y 🍭 que nos mantuvieron alertas para llegar a la meta.😉
+
+#Data Lovers
+Índice
+Preámbulo
+Descripción
+Consideraciones generales
+Objetivos de aprendizaje
+Parte obligatoria
+Parte opcional
+Consideraciones técnicas
+Primeros pasos
+Contenido de referencia
+Checklist
+
+
+
 
 
 

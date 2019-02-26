@@ -8,6 +8,10 @@ const root = document.getElementById('root');
 const cajitas = document.getElementsByClassName('cajitas')
 const dataPokemon = window.POKEMON.pokemon;
 const forWeight = document.getElementById('forWeight');
+
+
+
+
 //const Water = document.getElementById('Water');
 //const Flying = document.getElementById('Flying');
 //const nombre = document.querySelector('#nombre')
@@ -82,3 +86,23 @@ showPokemons.addEventListener("click",() => {
    printData(dataPokemon)
 
 })
+
+
+
+// función de buscador nombre , coincide letra y nombre que escribes
+
+
+
+//searchBtn.addEventListener("click", () => {
+
+  //const searchInput = filterFirstLetra.value;
+  //searchInput.style.display = "none";
+  //pantalla2.style.display = "block"
+  //let searchName = document.getElementById("search-input").value;
+  //printData(window.pokemon.filterFistLetra(dataPokemon, searchName));
+  //});
+//}
+
+//filterSearchName();
+
+//  imprime
