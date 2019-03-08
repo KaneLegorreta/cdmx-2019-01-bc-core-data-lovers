@@ -2,99 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Poke Lovers</title>
+    <title>Card Pokemon</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">﻿
   </head>
 
 
   <body>
 
-    <!--Pantalla uno-->
-    <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
-    <div id="pantalla1" class= "contenedor">
       <header>
-
-
-        <a><img src="https://fontmeme.com/permalink/190224/b800d75c43fb5afeb11668d1484bd53c.png" ></a>
-        <a><img src="https://fontmeme.com/permalink/190224/efbdcb3a39e9d92ffe2c7ab944c290c4.png" ></a>
-        <!--<h1>Pokedext website</h1>-->
+      POKEMON CARD
       </header>
 
 
-      <button type="submit" id="next" class= "styleBtn"> ENTRAR </button>
-    </div>
+      <!-- Nav Barra-->
 
-
-
-    <!--Pantalla dos-->
-    <!--Boton que muestra los Pokemones-->
-    <div id="pantalla2" class="hide">
-
-      <!-- Barra de menu-->
-
-      <nav class= "topnav">
+      <nav class= "nav-barra">
         <ul>
-          <li> <a href="index.html"> Inicio </a> </li>
-          <li> <a href="#" id="showPokemons"> Pokelist </a> </li>
-          <li> <a href="#" id= "forWeight"> Peso </a> </li>
-          <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Elementos</a>
+         
+          <li> <a href="#" id="showPokemons"> Todos los Pokémon </a> </li>
+          <li class="despliega">
+            <!-- abre un nlace de hipertexto-->
+          <a href="javascript:void(0)" class="botón">Por elemento</a>
+            
+            <p id ="Water" class="cajitas"><a href="#" >Agua</a></p>
+            <p id ="Flying" class="cajitas"><a href="#" >Aire</a></p>
+            <p id ="Dragon" class="cajitas"><a href="#" > Dragon </a></p>
+            <p id ="Electric" class="cajitas"><a href="#" >Electrico</a></p>
+           <p id ="Ghost" class="cajitas"><a href="#" >Fantasma</a></p>
+          <p id ="Fire" class="cajitas"><a href="#" >Fuego</a></p>
+            <p id ="Ice" class="cajitas"><a href="#" >Hielo</a></p>
+            <p id ="Bug" class="cajitas"><a href="#" >Insectos</a></p>
+            <p id ="Fighting" class="cajitas"><a href="#" >Pelea</a></p>
+           <p id ="Grass" class="cajitas"><a href="#" >Planta</a></p>
+            <p id ="Psychic" class="cajitas"><a href="#" >Psiquico</a></p>
+            <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
+            <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
+            <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
+            <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
 
-            <div class="dropdown-content">
-              <p id ="Water" class="cajitas"><a href="#" >Agua</a></p>
-              <p id ="Flying" class="cajitas"><a href="#" >Aire</a></p>
-              <p id ="Dragon" class="cajitas"><a href="#" > Dragon </a></p>
-              <p id ="Electric" class="cajitas"><a href="#" >Electrico</a></p>
-              <p id ="Ghost" class="cajitas"><a href="#" >Fantasma</a></p>
-              <p id ="Fire" class="cajitas"><a href="#" >Fuego</a></p>
-              <p id ="Ice" class="cajitas"><a href="#" >Hielo</a></p>
-              <p id ="Bug" class="cajitas"><a href="#" >Insectos</a></p>
-              <p id ="Fighting" class="cajitas"><a href="#" >Pelea</a></p>
-              <p id ="Grass" class="cajitas"><a href="#" >Planta</a></p>
-              <p id ="Psychic" class="cajitas"><a href="#" >Psiquico</a></p>
-              <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
-              <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
-              <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
-              <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
-
-
-        </div>
-      </li>
-    </ul>
+        </div></li></ul>
   </nav>
 
 
 
-  <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
-  <span id= "nombre-bienvenido"> </span>
 
-<!--buscador de personajes  -->
-<input type="search" id="searchInput" class="styleInput" placeholder="Pokémon que buscas">
-<button type="submit" id="searchBtn" class= "searchBtn"> Buscar </button>
 
 </div>
 
 
 
 
-<div id="root" class="container"> </div>
+<div id="root" class="tarjetas"> </div>
 
 
-<div class="parrafo">
 
-         <p class="pokeparrafo"> Pokémon GO es un videojuego de aventura en realidad aumentada, desarrollado por Niantic, Inc. para dispositivos iOS y Android. El juego usa el sistema de localización satelital de los smartphones y utiliza las posibilidades de sus cámaras para ubicar a los monstruos en lugares del mundo real, por lo que permite al usuario buscar, capturar, luchar y comerciar con Pokémon escondidos en el mundo real. Pokémon GO es gratuito, pero tiene micropagos en el caso de que queramos "acelerar" la experiencia de juego.
-
-1. Objetivo
-Capturar y entrenar a los pokémons para luchar por el control de "gimnasios" virtuales desplegados en lugares del mundo real que aparecen en los mapas de los smartphones
-
-2. Información de Pokémon
-Los pokémons que protagonizan Pokémon GO son los de las ediciones roja y azul. En este juego "sólo" hay 150 originales.
-
-Y en total hay 18 tipos de pokémon, a saber: fuego, agua, planta, eléctrico, hielo, lucha, veneno, tierra, volador, psíquico, insecto, roca, fantasma, dragón, siniestro, acero y hada.  </p>
-       </div>
 
 
 
